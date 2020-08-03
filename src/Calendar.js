@@ -1,9 +1,7 @@
 import React, { useEffect, useState } from "react";
 
 function Calendar() {
-
-    const [day, setDay] = useState("");
-
+    
     var date = new Date();
 
     useEffect(() => {

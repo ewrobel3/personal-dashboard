@@ -3,10 +3,8 @@ import './App.css';
 
 import Clock from "./Clock";
 import Weather from "./Weather";
-import Calendar from "./Calendar";
 import News from "./News";
 import ToDo from "./ToDo";
-import Music from "./Music";
 
 function App() {
   return (
