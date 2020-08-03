@@ -1,25 +1,31 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+
+import Clock from "./Clock";
+import Weather from "./Weather";
+import Calendar from "./Calendar";
+import News from "./News";
+import ToDo from "./ToDo";
+import Music from "./Music";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main> 
+      <div id="header">
+        <Clock/>
+        <Weather/>
+      </div>
+      <section>
+        <div id="news">
+          <h3>News</h3>
+          <News/>
+        </div> 
+        <div id="todomain">
+          <h3>To Do</h3>
+          <ToDo/>
+        </div>
+      </section>
+    </main>
   );
 }
 
